@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 25% 10px;
+    box-shadow: 5px 5px 10px #0000004a;
+}
+
+.top-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-container .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    position: relative;
+}
+
+.top-container .input-container label {
+    font-size: 1em;
+    color: #888;
+    font-weight: 700;
+}
+
+.top-container .input-container input {
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 80%;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+.top-container .input-container p {
+    font-size: .8em;
+    font-weight: 700;
+    color: #ff5454;
+    position: absolute;
+    bottom: -25px;
+    display: none;
+}
+
+.top-container .input-container input::placeholder {
+    color: #666;
+    font-weight: 700;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-container hr {
+    width: 84%;
+    border: 1px solid #c1c1c1;
+}
+
+.bottom-container .button-container button {
+    margin-right: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #844FFB;
+    color: #fff;
+    box-shadow: 0px 0px 10px #0000004a;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.bottom-container .button-container button .material-symbols-outlined {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.bottom-container .button-container button:hover {
+    transform: scale(1.1);
+}
+
+.resultado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.resultado-container p {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.resultado-container strong {
+    color: #844FFB;
+    font-size: 1.2em;
+    font-weight: 700;
+}

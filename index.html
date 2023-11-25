@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <form" method="get" autocomplete="off">
+            <div class="top-container">
+                <div class="input-container">
+                    <label for="dia" id="label-dia">Dia: </label>
+                    <input type="number" name="dia" id="dia" placeholder="DD">
+                    <p id="erro-dia">Digite um dia válido</p>
+                </div>
+                <div class="input-container">
+                    <label for="mes" id="label-mes">Mês: </label>
+                    <input type="number" name="mes" id="mes" placeholder="MM">
+                    <p id="erro-mes">Digite um mês válido</p>
+                </div>
+                
+                <div class="input-container">
+                    <label for="ano" id="label-ano">Ano: </label>
+                    <input type="number" name="ano" id="ano" placeholder="YYYY">
+                    <p id="erro-ano">Digite um ano válido</p>
+                </div>
+            </div>
+
+            <div class="bottom-container">
+                <hr>
+                <div class="button-container">
+                    <button id="button">
+                        <span class="material-symbols-outlined">check</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="resultado-container">
+            <p><strong id="res-anos">--</strong> Anos</p>
+            <p><strong id="res-meses">--</strong> Mêses</p>
+            <p><strong id="res-dias">--</strong> Dias</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

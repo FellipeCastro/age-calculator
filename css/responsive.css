@@ -1,0 +1,51 @@
+@media screen and (max-width: 750px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .top-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .top-container .input-container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .top-container .input-container input {
+        width: 100%;
+    }
+    
+    .bottom-container {
+        height: 100px;
+        position: relative;
+    }
+
+    .bottom-container hr {
+        width: 100%;
+    }
+    
+    .bottom-container .button-container button {
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bottom-container .button-container button:hover {
+        transform: translate(-50%, -50%);
+    }
+
+    .bottom-container .button-container button .material-symbols-outlined {
+        font: 1.5em;
+    }
+    
+    .resultado-container p {
+        font-size: 3em;
+    }
+}
